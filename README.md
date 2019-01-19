@@ -2,8 +2,17 @@
 
 php 精度数学
 
+//加载依赖
 
-BC::instance(); //声明单例 默认2位小数
+composer require pxb/bcmath
+
+//加载类
+
+use Noob\Lib\BC;
+
+//声明单例
+
+BC::instance();  //默认2位小数
 
 BC::instance(4);  //4位小数 改变结果小数位
 
